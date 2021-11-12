@@ -1,7 +1,7 @@
 {
   "name": "dani-portfolio",
   "version": "0.0.1",
-  "licence": "MIT",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -30,6 +30,7 @@
     "eslint": "^8.2.0",
     "eslint-plugin-react": "^7.27.0",
     "jest": "^27.3.1",
+    "jest-canvas-mock": "^2.3.1",
     "postcss": "^8.3.11",
     "tailwindcss": "^2.2.19",
     "ts-jest": "^27.0.7",
