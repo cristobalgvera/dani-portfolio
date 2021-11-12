@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import { FiExternalLink } from 'react-icons/fi';
 import { IExperience } from '../../../shared/types/experience/IExperience';
 import { ExternalLink } from '../../common/atoms/ExternalLink';
 
