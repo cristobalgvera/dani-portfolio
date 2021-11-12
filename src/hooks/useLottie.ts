@@ -1,8 +1,8 @@
-import { useEffect, RefObject, useRef } from 'react';
 import Lottie, {
-  AnimationConfigWithPath,
   AnimationConfigWithData,
+  AnimationConfigWithPath,
 } from 'lottie-web';
+import { useEffect, useRef } from 'react';
 
 type PartialAnimationConfigWithPath = Partial<
   Omit<AnimationConfigWithPath, 'path'>
