@@ -10,6 +10,7 @@ export const HeaderLink: FC<HeaderLinkProps> = ({
 }) => (
   <a
     role="link"
+    data-testid="header-link"
     href={href}
     target={target}
     rel={rel}

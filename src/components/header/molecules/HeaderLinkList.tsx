@@ -1,11 +1,15 @@
 import { FC } from 'react';
-import { headerLinks } from '../../../data/headerData';
+import { IHeaderLink } from '../../../shared/types/header/IHeaderLink';
 import { HeaderLink } from '../atoms/HeaderLink';
 
-export const HeaderLinkList: FC = () => {
+interface HeaderLinkListProps {
+  headers: IHeaderLink[];
+}
+
+export const HeaderLinkList: FC<HeaderLinkListProps> = ({ headers }) => {
   return (
     <ul className="flex flex-row space-x-4 md:space-x-10 md:text-xl justify-center md:justify-end font-thin">
-      {headerLinks.map((link) => (
+      {headers.map((link) => (
         <li key={link.href}>
           <HeaderLink link={link} />
         </li>

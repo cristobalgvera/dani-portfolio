@@ -11,7 +11,11 @@ export const PageSection: FC<PageSectionProps> = ({
   children,
 }) => {
   return (
-    <section id={id} className={`${extraClasses} my-16 px-5`}>
+    <section
+      data-testid="section"
+      id={id}
+      className={`${extraClasses} my-16 px-5`}
+    >
       {children}
     </section>
   );

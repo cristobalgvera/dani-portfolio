@@ -7,7 +7,10 @@ interface ExperienceTagProps {
 }
 
 export const ExperienceTag: FC<ExperienceTagProps> = ({ skill }) => (
-  <span className="px-2 py-1 mt-3 ml-1 rounded-lg border border-gray-500 text-sm">
+  <span
+    data-testid="experience-tag"
+    className="px-2 py-1 mt-3 ml-1 rounded-lg border border-gray-500 text-sm"
+  >
     {skill}
   </span>
 );
