@@ -1,5 +1,16 @@
 function App() {
-  return <div className="text-blue-600 font-bold">App</div>;
+  return (
+    <div className="container my-10 mx-auto bg-black text-white">
+      <div>Header</div>
+      <main>
+        <div>Hero</div>
+        <div>Experience</div>
+        <div>Projects</div>
+        <div>Skills</div>
+        <div>Contact</div>
+      </main>
+    </div>
+  );
 }
 
 export default App;
