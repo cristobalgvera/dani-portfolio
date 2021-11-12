@@ -1,4 +1,4 @@
-import { HeaderLinkList } from '../molecules/HeaderLinkList';
+import { HeaderLinkList } from './molecules/HeaderLinkList';
 
 const Header = () => {
   return (

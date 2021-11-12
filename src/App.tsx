@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react';
 
-const Header = lazy(() => import('./components/header/organisms/Header'));
-const Hero = lazy(() => import('./components/hero/organisms/Hero'));
+const Header = lazy(() => import('./components/header/Header'));
+const Hero = lazy(() => import('./components/hero/Hero'));
 
 function App() {
   return (

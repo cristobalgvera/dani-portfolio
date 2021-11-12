@@ -1,6 +1,6 @@
-import { HeroAnimation } from '../atoms/HeroAnimation';
-import { HeroGreet } from '../atoms/HeroGreet';
-import { HERO_DATA } from '../../../data';
+import { HeroAnimation } from './atoms/HeroAnimation';
+import { HeroGreet } from './atoms/HeroGreet';
+import { HERO_DATA } from '../../data';
 
 const Hero = () => {
   return (
