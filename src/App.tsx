@@ -1,14 +1,15 @@
 import { lazy, Suspense } from 'react';
 
 const Header = lazy(() => import('./components/header/organisms/Header'));
+const Hero = lazy(() => import('./components/hero/organisms/Hero'));
 
 function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <div className="container my-10 mx-auto bg-gray-500 text-white">
+      <div className="container my-10 mx-auto max-w-screen-lg text-gray-100">
         <Header />
         <main>
-          <div>Hero</div>
+          <Hero />
           <div>Experience</div>
           <div>Projects</div>
           <div>Skills</div>
