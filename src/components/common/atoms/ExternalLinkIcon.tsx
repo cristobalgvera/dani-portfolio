@@ -3,9 +3,10 @@ import { FiExternalLink } from 'react-icons/fi';
 
 interface ExternalLinkProps {
   href: string;
+  Icon?: JSX.Element;
 }
 
-export const ExternalLink: FC<ExternalLinkProps> = ({ href }) => (
+export const ExternalLinkIcon: FC<ExternalLinkProps> = ({ href, Icon }) => (
   <a
     role="link"
     href={href}
@@ -13,6 +14,6 @@ export const ExternalLink: FC<ExternalLinkProps> = ({ href }) => (
     target="_blank"
     rel="noreferrer noopener"
   >
-    <FiExternalLink className="text-xl text-blue-500" />
+    {Icon ?? <FiExternalLink className="text-xl text-blue-500" />}
   </a>
 );

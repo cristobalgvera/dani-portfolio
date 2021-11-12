@@ -5,8 +5,8 @@ const companyName = 'Company Name';
 const companyLink = 'https://company.com';
 const EXTERNAL_LINK = 'ExternaLink';
 
-jest.mock('../../common/atoms/ExternalLink.tsx', () => ({
-  ExternalLink: () => <p>{EXTERNAL_LINK}</p>,
+jest.mock('../../common/atoms/ExternalLinkIcon.tsx', () => ({
+  ExternalLinkIcon: () => <p>{EXTERNAL_LINK}</p>,
 }));
 
 describe('ExperienceCompany', () => {

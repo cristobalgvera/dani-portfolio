@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { IExperience } from '../../../shared/types/experience/IExperience';
-import { ExternalLink } from '../../common/atoms/ExternalLink';
+import { ExternalLinkIcon } from '../../common/atoms/ExternalLinkIcon';
 
 interface ExperienceCompanyProps
   extends Pick<IExperience, 'companyName' | 'companyLink'> {}
@@ -13,6 +13,6 @@ export const ExperienceCompany: FC<ExperienceCompanyProps> = ({
     <span data-testid="company-name" className="uppercase font-bold text-2xl">
       {companyName}
     </span>
-    {companyLink && <ExternalLink href={companyLink} />}
+    {companyLink && <ExternalLinkIcon href={companyLink} />}
   </div>
 );

@@ -11,11 +11,11 @@ describe('ExperienceSkills', () => {
     expect(getByText('javascript')).toBeInTheDocument();
     expect(getByText('react')).toBeInTheDocument();
 
-    expect(getAllByTestId('experience-tag')).toHaveLength(3);
+    expect(getAllByTestId('tag')).toHaveLength(3);
   });
 
   it('should render no experience tags', () => {
     const { queryAllByTestId } = render(<ExperienceSkills skills={[]} />);
-    expect(queryAllByTestId('experience-tag')).toHaveLength(0);
+    expect(queryAllByTestId('tag')).toHaveLength(0);
   });
 });

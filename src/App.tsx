@@ -4,6 +4,7 @@ import { Spinner } from './components/common/atoms/Spinner';
 const Header = lazy(() => import('./components/header/Header'));
 const Hero = lazy(() => import('./components/hero/Hero'));
 const Experiences = lazy(() => import('./components/experience/Experience'));
+const Projects = lazy(() => import('./components/projects/Projects'));
 
 const App: FC = () => {
   return (
@@ -13,7 +14,7 @@ const App: FC = () => {
         <main>
           <Hero />
           <Experiences />
-          <div>Projects</div>
+          <Projects />
           <div>Skills</div>
           <div>Contact</div>
         </main>
