@@ -7,6 +7,7 @@ interface ExternalLinkProps {
 
 export const ExternalLink: FC<ExternalLinkProps> = ({ href }) => (
   <a
+    role="link"
     href={href}
     className="ml-3 pt-1"
     target="_blank"
