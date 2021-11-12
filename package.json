@@ -1,19 +1,26 @@
 {
   "name": "dani-portfolio",
   "version": "0.0.1",
+  "licence": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test": "jest --watch"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.4.1",
     "lottie-web": "^5.8.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-icons": "^4.3.1"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.0.2",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
@@ -22,8 +29,10 @@
     "autoprefixer": "^10.4.0",
     "eslint": "^8.2.0",
     "eslint-plugin-react": "^7.27.0",
+    "jest": "^27.3.1",
     "postcss": "^8.3.11",
     "tailwindcss": "^2.2.19",
+    "ts-jest": "^27.0.7",
     "typescript": "^4.3.2",
     "vite": "^2.6.4"
   }
