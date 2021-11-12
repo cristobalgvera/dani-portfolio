@@ -1,16 +1,17 @@
-import { lazy, Suspense } from 'react';
+import { FC, lazy, Suspense } from 'react';
 
 const Header = lazy(() => import('./components/header/Header'));
 const Hero = lazy(() => import('./components/hero/Hero'));
+const Experiences = lazy(() => import('./components/experience/Experience'));
 
-function App() {
+const App: FC = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <div className="container my-10 mx-auto max-w-screen-lg text-gray-100">
         <Header />
         <main>
           <Hero />
-          <div>Experience</div>
+          <Experiences />
           <div>Projects</div>
           <div>Skills</div>
           <div>Contact</div>
@@ -18,6 +19,6 @@ function App() {
       </div>
     </Suspense>
   );
-}
+};
 
 export default App;

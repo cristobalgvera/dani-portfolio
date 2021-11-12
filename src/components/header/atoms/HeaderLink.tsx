@@ -1,12 +1,13 @@
-import { IHeaderLink } from '../../../types/header/IHeaderLink';
+import { FC } from 'react';
+import { IHeaderLink } from '../../../shared/types/header/IHeaderLink';
 
 interface HeaderLinkProps {
   link: IHeaderLink;
 }
 
-export const HeaderLink = ({
+export const HeaderLink: FC<HeaderLinkProps> = ({
   link: { href, title, rel, target },
-}: HeaderLinkProps) => (
+}) => (
   <a
     href={href}
     target={target}

@@ -1,7 +1,8 @@
+import { FC } from 'react';
 import animationData from '../../../assets/hero/astronaut.json';
 import { useLottie } from '../../../hooks/useLottie';
 
-export const HeroAnimation = () => {
+export const HeroAnimation: FC = () => {
   const { container } = useLottie({ animationData });
 
   return (
