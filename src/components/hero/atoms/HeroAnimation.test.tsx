@@ -1,10 +1,9 @@
 import { render } from '@testing-library/react';
-import { useRef } from 'react';
 import { HeroAnimation } from './HeroAnimation';
 
 jest.mock('../../../hooks/useLottie', () => ({
   useLottie: () => ({
-    container: useRef<HTMLDivElement>(null),
+    container: { current: null },
   }),
 }));
 
