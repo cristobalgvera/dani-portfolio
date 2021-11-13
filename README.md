@@ -4,7 +4,7 @@ This portfolio was made in order to expose Dani's works in a properly way.
 
 ## TL;DR
 
-Project was made using **React**, **TailwindCSS**, **TypeScript** and **Vite** as core technologies. Until now there is just a landing page showing Dani's portfolio and resume.
+Project was made using **NextJS**, **TailwindCSS**, **TypeScript** as core technologies. Until now there is just a landing page showing Dani's portfolio and resume.
 
 ## 🧑🏻‍💻 Development
 
