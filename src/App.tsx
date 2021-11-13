@@ -4,7 +4,7 @@ import { Spinner } from './components/common/atoms/Spinner';
 const Header = lazy(() => import('./components/header/Header'));
 const Hero = lazy(() => import('./components/hero/Hero'));
 const Experiences = lazy(() => import('./components/experience/Experience'));
-const Projects = lazy(() => import('./components/projects/Projects'));
+const Projects = lazy(() => import('./components/project/Projects'));
 
 const App: FC = () => {
   return (

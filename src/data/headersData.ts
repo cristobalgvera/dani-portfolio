@@ -1,7 +1,7 @@
 import { SECTION } from '../shared/constants';
 import { IHeaderLink } from '../shared/types/header/IHeaderLink';
 
-export const HEADERS: IHeaderLink[] = [
+export const HEADERS_DATA: IHeaderLink[] = [
   {
     href: `#${SECTION.EXPERIENCES}`,
     title: SECTION.EXPERIENCES,

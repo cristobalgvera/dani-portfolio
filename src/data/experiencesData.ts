@@ -1,6 +1,6 @@
 import { IExperience } from '../shared/types/experience/IExperience';
 
-export const experiencesData: IExperience[] = [
+export const EXPERIENCE_DATA: IExperience[] = [
   {
     companyName: 'WeCommit',
     role: 'SDE Intern',

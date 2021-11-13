@@ -9,10 +9,10 @@ export const ExperienceCompany: FC<ExperienceCompanyProps> = ({
   companyName,
   companyLink,
 }) => (
-  <div className="pb-0.5 flex">
+  <div className="pb-0.5 flex gap-x-3">
     <span data-testid="company-name" className="uppercase font-bold text-2xl">
       {companyName}
     </span>
-    {companyLink && <ExternalLinkIcon href={companyLink} />}
+    {companyLink && <ExternalLinkIcon link={{ href: companyLink }} />}
   </div>
 );
