@@ -1,20 +1,15 @@
 import { FC } from 'react';
-import Head from 'next/head';
 import {
   Experiences,
   Header,
   Hero,
   Projects,
 } from '../src/components/portfolio';
+import { Layout } from '../src/components/common/molecules/Layout';
 
 const App: FC = () => {
   return (
-    <>
-      <Head>
-        <title>Daniela Corcuera</title>
-        <meta name="description" content="Portafolio de Daniela Corcuera" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout>
       <div className="container my-10 mx-auto max-w-screen-lg text-gray-100">
         <Header />
         <main>
@@ -25,7 +20,7 @@ const App: FC = () => {
           <div>Contact</div>
         </main>
       </div>
-    </>
+    </Layout>
   );
 };
 
