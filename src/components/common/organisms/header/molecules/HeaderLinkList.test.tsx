@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { IHeaderLink } from '../../../../shared/types/header/IHeaderLink';
+import { IHeaderLink } from '../../../../../shared/types/header/IHeaderLink';
 import { HeaderLinkList } from './HeaderLinkList';
 
 const GOOGLE: IHeaderLink = {

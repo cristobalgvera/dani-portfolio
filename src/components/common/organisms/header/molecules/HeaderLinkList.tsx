@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { IHeaderLink } from '../../../../shared/types/header/IHeaderLink';
+import { IHeaderLink } from '../../../../../shared/types/header/IHeaderLink';
 import { HeaderLink } from '../atoms/HeaderLink';
 
 interface HeaderLinkListProps {
