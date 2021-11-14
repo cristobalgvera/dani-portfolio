@@ -1,9 +1,11 @@
 import { FC } from 'react';
 import Head from 'next/head';
-import Header from '../src/components/header/Header';
-import Hero from '../src/components/hero/Hero';
-import Experiences from '../src/components/experience/Experience';
-import Projects from '../src/components/project/Projects';
+import {
+  Experiences,
+  Header,
+  Hero,
+  Projects,
+} from '../src/components/portfolio';
 
 const App: FC = () => {
   return (
