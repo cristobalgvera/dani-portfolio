@@ -1,14 +1,11 @@
 import { FC } from 'react';
+import Image, { ImageProps } from 'next/image';
 
-interface ProjectImageProps
-  extends React.DetailedHTMLProps<
-    React.ImgHTMLAttributes<HTMLImageElement>,
-    HTMLImageElement
-  > {
+interface ProjectImageProps extends ImageProps {
   src: string;
   alt: string;
 }
 
 export const ProjectImage: FC<ProjectImageProps> = ({ src, alt }) => {
-  return <img role="img" src={src} alt={alt} width={350} height={300} />;
+  return <Image role="img" src={src} alt={alt} width={350} height={300} />;
 };

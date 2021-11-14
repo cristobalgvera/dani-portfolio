@@ -7,7 +7,7 @@ interface LayoutProps {
 }
 
 export const Layout: FC<LayoutProps> = ({ children, title }) => (
-  <div className="my-10 mx-auto max-w-screen-lg text-gray-100">
+  <div className="my-10 mx-auto max-w-screen-sm md:max-w-screen-md text-gray-100">
     <Head>
       <title data-testid="document-title">{title ?? 'Daniela Cocuera'}</title>
       <meta name="description" content="Portafolio de Daniela Corcuera" />

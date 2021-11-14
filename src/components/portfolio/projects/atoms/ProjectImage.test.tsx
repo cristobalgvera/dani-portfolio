@@ -11,12 +11,4 @@ describe('ProjectImage', () => {
     );
     expect(container).toBeInTheDocument();
   });
-
-  it('should show image provided', () => {
-    const { getByRole } = render(
-      <ProjectImage src={imageUrl} alt={imageAlt} />,
-    );
-    expect(getByRole('img')).toHaveAttribute('src', imageUrl);
-  });
 });
-('img');

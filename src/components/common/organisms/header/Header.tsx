@@ -4,7 +4,7 @@ import { HeaderLinkList } from './molecules/HeaderLinkList';
 
 export const Header: FC = () => {
   return (
-    <nav className="space-x-10">
+    <nav>
       <HeaderLinkList headers={HEADERS_DATA} />
     </nav>
   );

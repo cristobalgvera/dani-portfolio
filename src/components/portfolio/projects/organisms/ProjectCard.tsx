@@ -12,14 +12,14 @@ interface ProjectLayoutProps {
 export const ProjectCard: FC<ProjectLayoutProps> = ({
   project: { title, description, tools, image, link },
 }) => (
-  <div className="grid grid-cols-2 gap-x-4 lg:gap-x-16">
+  <article className="grid py-2 justify-center md:justify-start gap-x-4 group md:grid-flow-col lg:gap-x-16">
+    <picture className="md:group-even:order-last">
+      <ProjectImage src={image} alt={title} />
+    </picture>
     <div className="flex flex-col gap-y-2 lg:gap-y-4">
       <ProjectInformation title={title} description={description} />
       <ProjectTags tags={tools} />
       <ProjectLinks links={[{ href: link }]} />
     </div>
-    <div className="self-center">
-      <ProjectImage src={image} alt={title} />
-    </div>
-  </div>
+  </article>
 );

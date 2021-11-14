@@ -8,7 +8,7 @@ export const Projects = () => {
   return (
     <PageSection id={SECTION.PROJECTS}>
       <SectionHeader title={SECTION.PROJECTS} />
-      <div className="flex flex-col gap-y-4 lg:gap-y-12">
+      <div className="flex flex-col gap-y-8 lg:gap-y-12">
         {PROJECTS_DATA.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}

@@ -8,7 +8,7 @@ interface HeaderLinkListProps {
 
 export const HeaderLinkList: FC<HeaderLinkListProps> = ({ headers }) => {
   return (
-    <ul className="flex flex-row space-x-4 md:space-x-10 md:text-xl justify-center md:justify-end font-thin">
+    <ul className="flex flex-col justify-center items-end lg:flex-row lg:justify-end lg:space-x-10 lg:text-xl ">
       {headers.map((link) => (
         <li key={link.href}>
           <HeaderLink link={link} />

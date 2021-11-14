@@ -14,7 +14,7 @@ export const PageSection: FC<PageSectionProps> = ({
     <section
       data-testid="section"
       id={id}
-      className={`${extraClasses} my-16 px-5`}
+      className={`${extraClasses} my-4 px-5 lg:my-16`}
     >
       {children}
     </section>
